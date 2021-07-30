@@ -1,5 +1,6 @@
 #!/bin/bash
-wget -O /www/ --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/libernet.zip
+wget --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/libernet.zip
+mv libernet.zip /www
 rm -r /www/libernet
 unzip /www/libernet.zip
 mkdir /www/libernet/music
