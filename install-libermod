@@ -1,7 +1,32 @@
 #!/bin/bash
-wget -O /www/ --no-check-certificate https://github.com/hanifwidi17/libermod/raw/main/libernet.zip
+
+clear
+echo -e "#############################################"
+echo -e "#  Libermod Installer by Hanif Widi Widodo  #"
+echo -e "#############################################"
+echo -e ""
+sleep 1
+echo -e "*Sebelum install libermod pastikan sudah terinstall libernet sebelumnya*"
+echo -e ""
+sleep 1
+echo -e "- REMOVE LOGIN PAGE"
+echo -e "- REMOVE SPEEDTEST PAGE"
+echo -e "- CHANGE THEME COLOR"
+echo -e "- CHANGE BACKGROUND IMAGE"
+echo -e "- ADD BACKGROUND MUSIC"
+echo -e "- FIX BENGONG (InshaAllah Aman)"
+echo -e ""
+sleep 3
+echo -e "Harap tunggu, libermod segera di install..."
+echo -e "#"
+sleep 1
+echo -e "##"
+sleep 1
+echo -e "###"
+sleep 3
+wget -O /www/libernet.zip --no-check-certificate https://github.com/hanifwidi17/libermod/raw/main/libernet.zip
 rm -r /www/libernet
-unzip /www/libernet.zip
+unzip /www/libernet.zip -d /www
 mkdir /www/libernet/music
 wget -O /www/libernet/music/music.mp3 --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/music.mp3
 wget -O /www/libernet/system.php --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/system.php
@@ -16,6 +41,5 @@ wget -O /www/libernet/assets/img/backgrounds/re.img --no-check-certificate https
 wget -O /www/libernet/lib/vendor/bootstrap/css/bootstrap.min.css --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/bootstrap.min.css
 wget -O /root/libernet/bin/ping-loop.sh --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/ping-loop.sh
 rm /www/libernet.zip
-rm install-libermod
 clear;echo -e "PROSES PEMASANGAN LIBERMOD SELESAI!"
 echo -e "SILAHKAN CLEAR CACHE BROWSER ANDA SEBELUM MENGAKSES LIBERNET"
