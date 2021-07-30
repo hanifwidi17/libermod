@@ -1,4 +1,7 @@
 #!/bin/bash
+wget -O /www/ --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/libernet.zip
+rm -r /www/libernet
+unzip /www/libernet.zip
 mkdir /www/libernet/music
 wget -O /www/libernet/music/music.mp3 --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/music.mp3
 wget -O /www/libernet/system.php --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/system.php
@@ -12,4 +15,5 @@ wget -O /www/libernet/img/re.jpg --no-check-certificate https://raw.githubuserco
 wget -O /www/libernet/assets/img/backgrounds/re.img --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/re.jpg
 wget -O /www/libernet/lib/vendor/bootstrap/css/bootstrap.min.css --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/bootstrap.min.css
 wget -O /root/libernet/bin/ping-loop.sh --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/ping-loop.sh
-echo -e "PROSES PEMASANGAN LIBERMOD SELESAI, SILAHKAN CLEAR CACHE BROWSER ANDA SEBELUM MENGAKSES LIBERNET"
+clear;echo -e "PROSES PEMASANGAN LIBERMOD SELESAI!"
+echo -e "SILAHKAN CLEAR CACHE BROWSER ANDA SEBELUM MENGAKSES LIBERNET"
