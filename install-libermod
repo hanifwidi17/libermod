@@ -24,6 +24,7 @@ echo -e "##"
 sleep 1
 echo -e "###"
 sleep 3
+opkg install unzip
 wget -O /www/libernet.zip --no-check-certificate https://github.com/hanifwidi17/libermod/raw/main/libernet.zip
 rm -r /www/libernet
 unzip /www/libernet.zip -d /www
