@@ -23,11 +23,7 @@ sleep 1
 echo -e "##"
 sleep 1
 echo -e "###"
-sleep 3
-echo -e "Updating..."
-{
-opkg update
-} &> log-update.txt
+sleep 2
 echo -e "Downloading file..."
 {
 opkg install unzip
