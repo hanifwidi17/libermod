@@ -41,5 +41,6 @@ wget -O /www/libernet/assets/img/backgrounds/re.img --no-check-certificate https
 wget -O /www/libernet/lib/vendor/bootstrap/css/bootstrap.min.css --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/bootstrap.min.css
 wget -O /root/libernet/bin/ping-loop.sh --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/ping-loop.sh
 rm /www/libernet.zip
+rm install-libermod
 clear;echo -e "PROSES PEMASANGAN LIBERMOD SELESAI!"
 echo -e "SILAHKAN CLEAR CACHE BROWSER ANDA SEBELUM MENGAKSES LIBERNET"
