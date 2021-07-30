@@ -17,4 +17,7 @@ wget -O install-libermod https://raw.githubusercontent.com/hanifwidi17/libermod/
 </br>
 
 # Hapus Musik
+<br>
+<li> Jalahkan Script di terminal :</li>
+<br>
 rm /www/libernet/music/music.mp3
