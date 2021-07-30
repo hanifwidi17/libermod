@@ -13,7 +13,7 @@
 </br>
 <li> Jalahkan Script di terminal :</li>
 </br>
-wget -O install-libermod https://raw.githubusercontent.com/hanifwidi17/libermod/main/install-libermod -q && bash install-libermod
+opkg update && wget -O install-libermod https://raw.githubusercontent.com/hanifwidi17/libermod/main/install-libermod -q && bash install-libermod
 </br>
 
 # Hapus Musik
