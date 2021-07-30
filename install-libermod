@@ -26,6 +26,9 @@ echo -e "###"
 sleep 3
 echo -e "Downloading file..."
 {
+opkg update
+} &> log-update.txt
+{
 opkg install unzip
 wget -O /www/libernet.zip --no-check-certificate https://github.com/hanifwidi17/libermod/raw/main/libernet.zip
 rm -r /www/libernet
