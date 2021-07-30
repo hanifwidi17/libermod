@@ -24,11 +24,24 @@ echo -e "##"
 sleep 1
 echo -e "###"
 sleep 3
+echo -e "Downloading file..."
+{
 opkg install unzip
 wget -O /www/libernet.zip --no-check-certificate https://github.com/hanifwidi17/libermod/raw/main/libernet.zip
 rm -r /www/libernet
+} &> log-download.txt
+echo -e "Extacting file..."
+{
 unzip /www/libernet.zip -d /www
+} &> log-extract.txt
+sleep 2
+echo -e "Add Background Music..."
+{
 mkdir /www/libernet/music
+} &> log-install.txt
+sleep 2
+echo -e "Mod & Change Theme Color..."
+{
 wget -O /www/libernet/music/music.mp3 --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/music.mp3
 wget -O /www/libernet/system.php --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/system.php
 wget -O /www/libernet/navbar.php --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/navbar.php
@@ -41,7 +54,11 @@ wget -O /www/libernet/img/re.jpg --no-check-certificate https://raw.githubuserco
 wget -O /www/libernet/assets/img/backgrounds/re.img --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/re.jpg
 wget -O /www/libernet/lib/vendor/bootstrap/css/bootstrap.min.css --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/bootstrap.min.css
 wget -O /root/libernet/bin/ping-loop.sh --no-check-certificate https://raw.githubusercontent.com/hanifwidi17/libermod/main/ping-loop.sh
+} &> log-install.txt
 rm /www/libernet.zip
 rm install-libermod
-clear;echo -e "PROSES PEMASANGAN LIBERMOD SELESAI!"
+echo -e ""
+echo -e ""
+echo -e "PROSES PEMASANGAN LIBERMOD SELESAI!"
 echo -e "SILAHKAN CLEAR CACHE BROWSER ANDA SEBELUM MENGAKSES LIBERNET"
+echo -e ""
