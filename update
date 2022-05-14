@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="TVRI NASIONAL" tvg-logo="http://klik.tvri.go.id/images/TVRI_Logo.png" group-title="LOKAL",TVRI NASIONAL
+http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRINASIONAL)/Stream(04)/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="INEWS" tvg-logo="https://img.inews.co.id/files/img/streaming/inewstv_new.png" group-title="LOKAL",INEWS
 https://d20td0jz4qovct.cloudfront.net/out/v1/9784c4642c4f465a83354505f84fa263/index_2.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TRANSTV" tvg-logo="https://cdn.detik.net.id/20detik2/images/transtv.png" group-title="LOKAL",TRANSTV
